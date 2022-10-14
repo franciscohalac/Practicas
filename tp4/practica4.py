@@ -58,3 +58,39 @@ print(frase_en_lista("hola mundo", ["hola","casa"]))
 def solo (string):
     bool(re.search("[a-zA-Z0-9]",string)) #le falta, no se como poner espacios y que no tenga mas cosas
 
+#Escribir una función que, dado una lista de telefonos, permita validar si estos corresponden 
+# o no con un teléfono de CABA.
+
+
+def telefono (numero):
+    patron = "[+]54\s011"
+    if re.match(patron, numero) != None:
+        print("Es de CABA")
+    else:
+        print("No es de CABA")
+
+telefono("+54 351 5557162")
+
+#11
+def arrancaP(lista):
+    contador = 0
+    for elem in lista:
+        if re.match("^(P)", elem):
+            contador += 1
+    if contador > 1 :
+        print(True)
+    else:
+        print(not bool)
+
+arrancaP(["Práctica Python", "práctica C++", "Práctica Fortran"])
+
+#8
+def numeros(string):
+    print(re.findall("\d+", string))
+numeros("slbvs4jbv77vdsjv88svjv4")
+
+#9
+def entre (string):
+    print(re.findall("-(.*?)-", string))
+
+entre("Hoy estuvimos trabajando con re -regular expression- en python -con VSCode-")

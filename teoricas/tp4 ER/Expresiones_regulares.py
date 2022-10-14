@@ -100,6 +100,71 @@ print(re.findall(patron, texto))
 print(re.sub(patron, "###", texto))
 
 # Para pensar 🤔: ¿Qué resultado obtenemos? ¿Para qué sirve la función sub?
+#. cualquier caracter
+# * mas de uno
+# ? lo hace mas especifico
+# en findall el primer parametro es que buscas y el segundo que estas buscando
 
+
+"""
+#^	Inicio de línea
+# $	Fin de linea
+# \A	Inicio de texto
+# \Z	Fin de texto
+# .	Coincide con cualquier caracter en una línea dada
+# *	Cero o más: todas las ocurrencias de un dado substring
+# +	Una o más ocurrencias del patrón
+# ?	Cero o una
+# {n}	Exactamente n veces
+# {n,m}	Por lo menos n pero no más de m veces.
+# \w	Caracter alfanumércio
+# \W	Caracter NO alfanumércio
+# \d	Caracter numércio
+# \D	Caracter NO numércio
+# \s	Un espacio, de cualquier tipo (\t\n\r\f)
+# \S	Cualquier caracter que no sea un espacio
+#- El rango [a-d] equivale al [abcd]
+#- El rango [1-10] equivale al substring [12345678910]
+#- El rango [Dd] equivale a buscar una D mayúscula y una d minúscula
+
+# Expresiones regulares
+# re.search(patron, texto)
+
+"""
+"""
+import re
+texto = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet et amet."
+patron = "amet"
+re.match(patron, texto)"""
+
+
+import re
+texto = "Lorem ipsum dolor sit amet, consectetur ipsum elit. Amet sit amet."
+patron = "ipsum(.*?)sit"
+re.findall(patron, texto)
+[' dolor ', ' elit. Amet ']
+
+"""
+Algo que resulta muy útil es poder acceder a los archivos que hayan en una determinada carpeta sin conocer sus nombres en particular,
+ o acceder a un grupo de estos archivos que tengan algo en común (que todos tengan la misma extensión por ejemplo), 
+ más aún si son archivos que el programa genera en su ejecución, de manera de que a priori no los tenemos. 
+ Para esto podemos usar dos herramientas, el método listdir de la biblioteca os y el método glob de la biblioteca glob. 
+ Con el primero obtenemos una lista de todos los archivos que se encuentran en una carpeta, mientras que con el segundo, 
+ además de esto, tenemos la posibilidad de listar archivos específicos. Es decir:
+"""
+"""import os
+import glob
+os.listdir()
+['Ej1.py', 'Ej3.py', 'archivo2.txt', 'Ej2.py', 'Ej4.py', 'documento.txt', 'Ej5.py'...]
+glob.glob("*")
+['Ej1.py', 'Ej3.py', 'archivo2.txt', 'Ej2.py', 'Ej4.py', 'documento.txt', 'Ej5.py'...]
+glob.glob("*.py")
+['Ej1.py', 'Ej3.py', 'Ej2.py', 'Ej4.py', 'Ej5.py'...]"""
+
+"""Como ven, podemos obtener una lista, 
+la cual podríamos recorrer tanto para todos los archivos de una carpeta como para los archivos específicos.
+
+"""
 """Lorem ipsum dolor sit ###, consectetur adipiscing elit. Amet et ###.
 reemplaza el patron por ###"""
+
