@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    background-color: #bdb2ff;
+    margin: 20%;    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.cuadro{
+    background-color: #aef496;
+    border:solid; 
+    border-color: black;
+    
+}
+
+.semaforo{
+    background-color: #aef496; /* color fondo*/
+
+    padding-right: 80%; /*espacio a la derecha de la img*/
+
+    border:solid; /*borde y color del borde*/
+    border-color: black;
+}
+
+
+.libreria{
+    background-color: #aef496;
+    font-size: 80px;
+    color: violet;
+}
+
+.buscar{
+    background-size: 10px;
+    font-size: 40px;
+    background-color: #a0ff81;
+    padding: 15px 10px;
+}
+
+.click{
+    font-size: 25px;
+}
+
+.dedo{
+    top: 5%;
+    right: 50%;
+
+}

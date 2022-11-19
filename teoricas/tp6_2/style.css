@@ -1,0 +1,58 @@
+body{
+    text-align: center;
+    background-color: #bdb2ff;
+    margin: 20%;    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+/* font-family es el tipo de letra */
+
+.semaforo{
+    background-color: #aef496;
+    text-align: left;
+    border:solid;
+    border-color:black;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    padding-right: 70%;
+}
+
+.click{
+    background-color: #aef496;
+    font-size: 40px; 
+    color: black;
+    border:black;
+    border-right: solid;
+    border-left: solid;
+    text-decoration: black;
+}
+
+.libreria{
+    background-color: #aef496;
+    color: violet;
+    font-size: 90px;
+    padding-top: 5px;
+    border-right: solid;
+    border-left: solid;
+    border-color: black;
+    
+}
+
+.buscar{
+    text-align: center;
+    color: black;
+    background-size: 5% 30%;
+    font-size: 30px;
+    background-color: #aef496;
+    align-items: center;
+    padding: 5px 10px;
+    letter-spacing: 0px;
+    border-right: solid;
+    border-left: solid;
+    border-bottom: black;
+    border-bottom: solid;
+}
+.buscar span{
+
+    background-color: #5db241;
+}
